@@ -1,0 +1,79 @@
+/*CSS Variables*/
+:root {
+    /* --primary-color:#349fff */
+    --primary-color: #8d98eb;
+
+  }
+  /*Flex-row*/
+  .flex-row{
+    display:flex;
+    flex-wrap: wrap;
+    gap:1rem;
+    
+  }
+  .flex-column{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+  }
+/*Global Styles*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+body {
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+/*Header*/
+header{
+    /* color: var(--primary-color) ; */
+    position: fixed;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 100%;
+}
+
+header img{
+    height: 44px;
+    width: auto;
+    flex-direction: row;
+}
+
+nav.a{
+    font-size: var(--fs-h5);
+    color: white;
+    /* color: var(--black50); */
+    /* color: aqua; */
+}
+
+@media (max-width: 700px){
+    header{
+        flex-direction: column;
+    }
+}
+
+
+
+
+/*Responsive Design*/
