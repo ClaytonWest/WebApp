@@ -1,0 +1,19 @@
+{% extends "_layout.html" %}
+{% block content %}
+<body>
+    <a href="/">Return home</a>
+    <section class="hero is-success is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            {{g.user.username}}'s Profile
+          </h1>
+          <h2 class="subtitle">
+            You are user number #{{g.user.id}}
+          </h2>
+        </div>
+      </div>
+    </section>
+  </body>
+
+{% endblock content %}
